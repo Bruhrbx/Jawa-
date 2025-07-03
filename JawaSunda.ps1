@@ -15,6 +15,7 @@ function Take-Screenshot {
 }
 
 # Pertanyaan awal
+Clear-Host
 $jawab = Read-Host "Apakah kamu ingin menjawab pertanyaan? (y/n)"
 if ($jawab -ne 'y') {
     Write-Host "Batal."
