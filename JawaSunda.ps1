@@ -15,6 +15,8 @@ function Take-Screenshot {
 }
 
 # Pertanyaan awal
+Write-Host "Pertanyaan akan Di Mulai dalam 5 detik !"
+Start-Sleep -Seconds 5
 Clear-Host
 $jawab = Read-Host "Apakah kamu ingin menjawab pertanyaan? (y/n)"
 if ($jawab -ne 'y') {
@@ -23,6 +25,7 @@ if ($jawab -ne 'y') {
 }
 
 # Pertanyaan asal
+Clear-Host
 $asal = Read-Host "Apakah Kamu Dari Mana? (J = Jawa, S = Sunda)"
 
 if ($asal -eq 'J') {
